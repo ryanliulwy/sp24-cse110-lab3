@@ -1,8 +1,8 @@
 ---
-name: Custom issue template
+name: CSS Selector issue template
 about: Custom template for Lab 3
 title: ''
-labels: ''
+labels: CSS Selectors
 assignees: ryanliulwy
 
 ---
