@@ -10,18 +10,35 @@ body {
     border-color: hsla(244, 62%, 56%, 1);
     border-width: 0.2vw;
     border-radius: 30px;
-    margin-top: 0.1vh;
-    margin-bottom: 0.1vh;
-    margin-right: 0.1vw;
-    margin-left: 0.1vw;
-    padding-top: 0.2vh;
-    padding-bottom: 0.2vh;
-    padding-right: 0.2vw;
-    padding-left: 0.2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+
+    & div[hi="hi"]:has(> p) {
+        display:none;
+    }
 }
 
 hr {
+    position: static;
     border-color: var(--verydark, black);
+}
+
+*.image, *.video {
+    display:inline-block;
+    position: relative;
+    left: 10px;
+    width: 1080px;
+    height: 720px;
+    min-width: 20vw;
+    max-width: 80vw;
+    min-height: 20vh;
+    max-height: 80vh;
 }
 
 /* the cat. */
@@ -30,7 +47,7 @@ hr {
         margin: 4mm;
         padding: 4mm;
         font-size: 40px;
-        color: green
+        color: green;
     }
 }
 
@@ -39,7 +56,7 @@ hr {
         margin: 6mm 6mm 6mm 6mm;
         padding: 6mm 6mm 6mm 6mm;
         font-size: 60px;
-        color: yellow
+        color: yellow;
     }
 }
 
@@ -48,7 +65,7 @@ hr {
         margin: 8mm 8mm 8mm 8mm;
         padding: 8mm 8mm 8mm 8mm;
         font-size: 80px;
-        color: orange
+        color: orange;
     }
 }
 
@@ -57,6 +74,6 @@ hr {
         margin: 1cm 1cm 1cm 1cm;
         padding: 1cm 1cm 1cm 1cm;
         font-size: 120px;
-        color: red
+        color: red;
     }
 }
