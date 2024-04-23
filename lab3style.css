@@ -1,0 +1,14 @@
+:root {
+    /*it's a very dark color*/
+    --verydark: #000000
+}
+
+/* light blue background color for the overall page*/
+body {
+    background-color: rgb(75, 200, 255);
+    border-color: hsla(244, 62%, 56%, 1);
+}
+
+hr {
+    border-color: var(--verydark, black);
+}
