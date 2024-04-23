@@ -28,6 +28,11 @@ h2 ~ h3 {
     }
 }
 
+/* Active link */
+a:active{
+    background-color: white;
+}
+
 /* Attendence flexbox */
 nav > ul {
     display: flex;
@@ -36,15 +41,19 @@ nav > ul {
     column-gap:100px;
 }
 
-/* Important note notice of important note notice, noticing the notice of the important note and the noting of--*/
+/* Important note main note */
+section p {
+    font-family: "Jersey 10", sans-serif;
+}
+
+/* Important note notice of important note notice, noticing the notice of the important note and the noting of-- */
 section > p > strong{
     color: red
 }
 
-
-/* Important note main note */
-section p {
-    font-family: "Jersey 10", sans-serif;
+/* Big text when important note has been importantly noted */
+section:hover{
+    font-size:32px;
 }
 
 /* Lines between parts */
