@@ -1,9 +1,9 @@
 :root {
-    /*it's a very dark color*/
+    /* it's a very dark color */
     --verydark: #000000
 }
 
-/* light blue background color for the overall page*/
+/* light blue background color for the overall page */
 body {
     background-color: rgb(75, 200, 255);
     border-style: solid;
@@ -18,17 +18,51 @@ body {
     padding-bottom: 2vh;
     padding-right: 2vw;
     padding-left: 2vw;
+}
 
-    & div[hi="hi"]:has(> p) {
-        display:none;
+/* Text in Header */
+h2 ~ h3 {
+    color: darkblue;
+    & a {
+        color: darkblue;
     }
 }
 
+/* Attendence flexbox */
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap:100px;
+}
+
+/* Important note notice of important note notice, noticing the notice of the important note and the noting of--*/
+section > p > strong{
+    color: red
+}
+
+
+/* Important note main note */
+section p {
+    font-family: "Jersey 10", sans-serif;
+}
+
+/* Lines between parts */
 hr {
     position: static;
     border-color: var(--verydark, black);
 }
 
+/* Q&A Grid */
+hr + div {
+    display: grid;
+    grid-template-rows: 20px 10px 15px 10px 15px 10px 15px;
+    justify-items: start;
+    row-gap: 20px;
+    margin-bottom: 40px
+}
+
+/* Image and video sizing */
 *.image, *.video {
     display:inline-block;
     position: relative;
@@ -76,4 +110,8 @@ hr {
         font-size: 120px;
         color: red;
     }
+}
+
+div[hi="hi"]:has(> p) {
+    display:none;
 }
