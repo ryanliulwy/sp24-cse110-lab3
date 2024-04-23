@@ -6,9 +6,57 @@
 /* light blue background color for the overall page*/
 body {
     background-color: rgb(75, 200, 255);
+    border-style: solid;
     border-color: hsla(244, 62%, 56%, 1);
+    border-width: 0.2vw;
+    border-radius: 30px;
+    margin-top: 0.1vh;
+    margin-bottom: 0.1vh;
+    margin-right: 0.1vw;
+    margin-left: 0.1vw;
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
+    padding-right: 0.2vw;
+    padding-left: 0.2vw;
 }
 
 hr {
     border-color: var(--verydark, black);
+}
+
+/* the cat. */
+@media screen and (min-width: 500px) {
+    #cat{
+        margin: 4mm;
+        padding: 4mm;
+        font-size: 40px;
+        color: green
+    }
+}
+
+@media screen and (min-width: 720px) {
+    #cat{
+        margin: 6mm 6mm 6mm 6mm;
+        padding: 6mm 6mm 6mm 6mm;
+        font-size: 60px;
+        color: yellow
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    #cat{
+        margin: 8mm 8mm 8mm 8mm;
+        padding: 8mm 8mm 8mm 8mm;
+        font-size: 80px;
+        color: orange
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #cat{
+        margin: 1cm 1cm 1cm 1cm;
+        padding: 1cm 1cm 1cm 1cm;
+        font-size: 120px;
+        color: red
+    }
 }
